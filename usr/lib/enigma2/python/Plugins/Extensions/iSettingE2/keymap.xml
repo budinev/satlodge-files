@@ -1,0 +1,50 @@
+<keymap>
+	<map context="iSettingE2Map">	    
+		<key id="KEY_RED" mapto="red" flags="m" />		
+		<key id="KEY_GREEN" mapto="green" flags="m" />
+		<key id="KEY_YELLOW" mapto="yellow" flags="m" />
+		<key id="KEY_BLUE" mapto="blue" flags="b" />		
+		<key id="KEY_HELP" mapto="help" flags="m" />
+		<key id="KEY_INFO" mapto="info" flags="m" />		
+		<key id="KEY_MENU" mapto="menu" flags="m" />
+		<key id="KEY_EXIT" mapto="cancel" flags="m" />
+		<key id="KEY_ESC" mapto="cancel" flags="m" />
+		<key id="KEY_LEFT" mapto="left" flags="m" />
+		<key id="KEY_RIGHT" mapto="right" flags="m" />
+		<key id="KEY_UP" mapto="up" flags="m" />
+		<key id="KEY_DOWN" mapto="down" flags="m" />
+		<key id="KEY_OK" mapto="ok" flags="m" />		
+		<key id="KEY_1" mapto="1" flags="m" />
+		<key id="KEY_2" mapto="2" flags="m" />
+		<key id="KEY_3" mapto="3" flags="m" />
+		<key id="KEY_4" mapto="4" flags="m" />
+		<key id="KEY_5" mapto="5" flags="m" />
+		<key id="KEY_6" mapto="6" flags="m" />
+		<key id="KEY_7" mapto="7" flags="m" />
+		<key id="KEY_8" mapto="8" flags="m" />
+		<key id="KEY_9" mapto="9" flags="m" />
+		<key id="KEY_0" mapto="0" flags="m" />		
+		<key id="KEY_1" mapto="long1" flags="l" />
+		<key id="KEY_2" mapto="long2" flags="l" />
+		<key id="KEY_3" mapto="long3" flags="l" />
+		<key id="KEY_4" mapto="long4" flags="l" />
+		<key id="KEY_5" mapto="long5" flags="l" />
+		<key id="KEY_6" mapto="long6" flags="l" />
+		<key id="KEY_7" mapto="long7" flags="l" />
+		<key id="KEY_8" mapto="long8" flags="l" />		
+		<key id="KEY_9" mapto="long9" flags="l" />
+		<key id="KEY_0" mapto="long0" flags="l" />
+		<key id="KEY_OK" mapto="longOK" flags="l" />	
+		<key id="KEY_BLUE" mapto="longBlue" flags="l" />
+		<key id="KEY_GREEN" mapto="longGreen" flags="l" />	
+		<key id="KEY_YELLOW" mapto="longYellow" flags="l" />	
+		<key id="KEY_RED" mapto="longRed" flags="l" />	
+		<key id="KEY_INFO" mapto="longinfo" flags="l" />
+		<key id="KEY_UP" mapto="longup" flags="l" />
+		<key id="KEY_DOWN" mapto="longdown" flags="l" />
+		<key id="KEY_CHANNELUP" mapto="channelUp" flags="mr" />
+		<key id="KEY_CHANNELDOWN" mapto="channelDown" flags="mr" />	
+		<key id="KEY_PAGEUP" mapto="pageUp" flags="mr" />
+		<key id="KEY_PAGEDOWN" mapto="pageDown" flags="mr" />		
+	</map>
+</keymap>

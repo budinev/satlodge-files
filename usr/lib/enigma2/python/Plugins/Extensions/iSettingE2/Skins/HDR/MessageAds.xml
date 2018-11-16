@@ -1,0 +1,10 @@
+<screen name="MessageAds" position="0,640" zPosition="-1" size="1280,70" flags="wfNoBorder" backgroundColor="transparent">          
+                  <widget name="TextADS" position="40,0" zPosition="1" size="1200,70" font="RegularIE2;36" foregroundColor="#00ddebe8" backgroundColor="transparent" transparent="1" noWrap="1"/>
+                  <widget name="PixMap1" size="500,100" zPosition="1" alphatest="on" transparent="1" />          
+                  <widget name="PixMap2" size="500,100" zPosition="1" alphatest="on" transparent="1" />
+                  <widget name="PixMap3" size="500,100" zPosition="1" alphatest="on" transparent="1" />
+                  <widget name="PixMap4" size="500,100" zPosition="1" alphatest="on" transparent="1" />
+                  <widget name="PixMap5" size="500,100" zPosition="1" alphatest="on" transparent="1" />
+                  <widget name="PixMap6" size="500,100" zPosition="1" alphatest="on" transparent="1" />
+                  <widget name="PixMap7" size="500,100" zPosition="1" alphatest="on" transparent="1" />
+                </screen>

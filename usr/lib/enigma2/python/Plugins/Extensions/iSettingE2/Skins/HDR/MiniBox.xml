@@ -1,0 +1,12 @@
+<screen name="MiniBox" position="595,15" zPosition="10" flags="wfNoBorder" title="iSettingE2: Message Update" size="660,80" backgroundColor="#30403f3f">
+                          <eLabel position="5,5" size="650,70" zPosition="11" backgroundColor="#30000000" />
+                          <widget name="text" position="70,7" size="580,60" zPosition="12" font="RegularIE2;18" halign="center" valign="center" backgroundColor="#00000000" transparent="1" noWrap="1"/>
+                          <widget name="SettingPixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/DownloadSetting.png" alphatest="on" />
+                          <widget name="PluginPixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/DownloadPlugin.png" alphatest="on" />
+                          <widget name="ErrorNetworkPixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/network_error.png" alphatest="on" />
+                          <widget name="ErrorSettingPixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_error.png" alphatest="on" />
+                          <widget name="ErrorPluginPixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_error.png" alphatest="on" />
+                          <widget name="SettingOKPixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_info.png" alphatest="on" />
+                          <widget name="PluginOKPixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_info.png" alphatest="on" />
+                          <widget name="iprogress_red" position="70,67" size="580,5" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Buttons/mini_progress_red.png" borderWidth="0" borderColor="#30000000" />
+                </screen>

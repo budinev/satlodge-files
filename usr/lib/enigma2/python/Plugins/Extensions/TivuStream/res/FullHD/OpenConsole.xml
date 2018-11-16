@@ -1,0 +1,16 @@
+<screen name="ConsolepndFHD" flags="wfNoBorder" position="0,0" size="1920,1080" title="-TivuStream-" backgroundColor="#00000000">
+  <ePixmap position="0,0" zPosition="-1" size="1920,1071" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/1920_1080backtv.png" alphatest="blend" />
+  <ePixmap position="0,134" zPosition="-2" size="1920,935" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sfsf.png" alphatest="blend" />
+  <widget name="fittitle" position="575,53" zPosition="3" size="704,78" font="OpenFont1;44" foregroundColor="#3399ff" backgroundColor="#00000000" transparent="1" halign="center" />
+  <widget name="version" position="1320,60" zPosition="3" size="565,57" font="OpenFont1;32" foregroundColor="#00ff00" transparent="1" halign="right" />
+  <widget name="Maintainer" position="15,66" halign="right" size="250,50" zPosition="3" font="OpenFont1;32" foregroundColor="#00ff00" backgroundColor="#00000000" transparent="1" />
+  <widget name="Maintainer2" position="265,65" halign="left" size="250,50" zPosition="3" font="OpenFont1;32" foregroundColor="#ffff00" backgroundColor="#00000000" transparent="1" />
+  <ePixmap position="20,151" zPosition="1" size="320,150" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/logosk.png" alphatest="blend" />
+
+  <widget source="session.VideoPicture" render="Pig" position="1260,160" size="631,333" backgroundColor="transparent" zPosition="3" />
+
+  <eLabel name="label" zPosition="1" position="526,328" size="700,420" transparent="1" />
+  
+  <widget name="text" position="526,328" size="700,420" font="Regular;26" foregroundColor="#ff6600" transparent="1" zPosition="4" />
+
+</screen>

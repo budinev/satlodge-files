@@ -1,0 +1,53 @@
+<screen name="openMessageBoxFHD" flags="wfNoBorder" position="0,0" size="1920,1080" title="-TivuStream-" backgroundColor="#00000000">
+  <ePixmap position="0,0" zPosition="-1" size="1920,1071" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/1920_1080backtv.png" alphatest="blend" />
+  <ePixmap position="0,134" zPosition="-2" size="1920,935" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sfsf.png" alphatest="blend" />
+  <widget name="fittitle" position="575,53" zPosition="3" size="704,78" font="OpenFont1;44" foregroundColor="#3399ff" backgroundColor="#00000000" transparent="1" halign="center" />
+  <widget name="version" position="1320,60" zPosition="3" size="565,57" font="OpenFont1;32" foregroundColor="#00ff00" transparent="1" halign="right" />
+  <widget name="Maintainer" position="15,66" halign="right" size="250,50" zPosition="3" font="OpenFont1;32" foregroundColor="#00ff00" backgroundColor="#00000000" transparent="1" />
+  <widget name="Maintainer2" position="265,65" halign="left" size="250,50" zPosition="3" font="OpenFont1;32" foregroundColor="#ffff00" backgroundColor="#00000000" transparent="1" />
+  <ePixmap position="20,151" zPosition="1" size="320,150" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/logosk.png" alphatest="blend" />
+
+  <widget source="session.VideoPicture" render="Pig" position="1260,160" size="631,333" backgroundColor="transparent" zPosition="3" />
+
+ 
+  
+  <widget name="ErrorPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/input_error.png" position="832,254" size="54,54" alphatest="blend" />
+  <widget name="QuestionPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/input_question.png" position="831,253" size="54,54" alphatest="blend" />
+  <widget name="InfoPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/input_info.png" position="830,253" size="54,54" alphatest="blend" />
+  <widget name="WarningPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/input_warning.png" position="833,250" size="54,54" alphatest="blend" />
+  
+  
+  <widget name="list" position="533,356" size="700,420" itemHeight="36" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel32_1060.png" foregroundColor="#fff700" transparent="1" zPosition="10" />
+  <widget name="Text" font="Regular;30" position="531,555" size="694,308" foregroundColor="#fff700" transparent="1" zPosition="10" />
+  <widget name="text" font="Regular;30" position="533,553" size="695,329" foregroundColor="#fff700" transparent="1" zPosition="10" />
+  
+  <widget name="selectedChoice" position="529,753" zPosition="3" size="746,152" font="OpenFont1;32" transparent="1" foregroundColor="#ffffff" halign="center" />
+  <applet type="onLayoutFinish">
+<!-- # this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self["text"].getSize()
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 80, textsize[1] + 80)
+offset = 30
+if self.type == self.TYPE_YESNO:
+	offset = 70
+wsizex = textsize[0] + 120
+wsizey = textsize[1] + offset
+if (800 &gt; wsizex):
+	wsizex = 800
+wsize = (wsizex, wsizey)
+# resize
+self.instance.resize(eSize(*wsize))
+# resize label
+self["text"].instance.resize(eSize(*textsize))
+# move list
+listsize = (wsizex - 15, 64)
+self["list"].instance.move(ePoint(10, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+# center window
+newwidth = wsize[0]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y())) -->
+</applet>
+</screen>

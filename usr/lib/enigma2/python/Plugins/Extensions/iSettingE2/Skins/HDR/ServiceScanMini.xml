@@ -1,0 +1,23 @@
+<screen name="ServiceScanModMini" position="595,15" zPosition="10" flags="wfNoBorder" title="iSettingE2: Service Scan" size="660,80" backgroundColor="#30403f3f">
+                              <eLabel position="5,5" size="650,70" zPosition="11" backgroundColor="#30000000" />
+                              <widget source="FrontendInfo" render="Pixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/sat_m.png" transparent="1" alphatest="blend">
+                                <convert type="FrontendInfo">TYPE</convert>
+                                <convert type="ValueRange">0,0</convert>
+                                <convert type="ConditionalShowHide" />
+                              </widget>
+                              <widget source="FrontendInfo" render="Pixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/cable_m.png" transparent="1" alphatest="blend">
+                                <convert type="FrontendInfo">TYPE</convert>
+                                <convert type="ValueRange">1,1</convert>
+                                <convert type="ConditionalShowHide" />
+                              </widget>
+                              <widget source="FrontendInfo" render="Pixmap" position="8,11" size="54,54" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/dtt_m.png" transparent="1" alphatest="blend">
+                                <convert type="FrontendInfo">TYPE</convert>
+                                <convert type="ValueRange">2,2</convert>
+                                <convert type="ConditionalShowHide" />
+                              </widget>
+                              <widget name="network" position="70,7" size="580,18" zPosition="12" font="RegularIE2;16" transparent="1" />
+                              <widget name="transponder" position="70,27" size="580,18" zPosition="12" font="RegularIE2;16" transparent="1" />
+                              <widget name="scan_state" position="70,47" size="580,18" zPosition="12" font="RegularIE2;16" transparent="1" />
+                              <widget name="pass" position="70,47" size="580,18" zPosition="12" font="RegularIE2;16" transparent="1" />
+                              <widget name="scan_progress" position="70,67" size="580,5" zPosition="12" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Buttons/mini_progress_red.png" borderWidth="0" borderColor="#30000000" />
+                     </screen>

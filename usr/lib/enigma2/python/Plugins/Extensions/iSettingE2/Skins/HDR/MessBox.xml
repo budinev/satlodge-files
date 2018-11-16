@@ -1,0 +1,36 @@
+<screen name="MyMessageBox" position="center,center" size="1280,720" flags="wfNoBorder" title="iSettingE2: Message" backgroundColor="#30000000">
+                          <!-- <eLabel position="0,0" size="1280,720" zPosition="-1" backgroundColor="#30000000" /> -->
+                          <widget source="Title" render="Label" zPosition="2" position="60,45" size="700,40" foregroundColor="#00ddebe8" backgroundColor="#00000000" halign="left" font="RegularIE2; 24" transparent="1" />
+                          <ePixmap position="871,135" size="301,161" zPosition="4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Buttons/smflogo.png" alphatest="blend" transparent="1" />
+                          <!-- Menu -->
+                          <eLabel position="55,80" size="1170,5" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="822,321" size="400,5" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="817,30" size="5,55" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="1222,30" size="5,610" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="822,570" size="400,5" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="817,115" size="5,525" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="55,30" size="1170,5" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="55,110" size="1170,5" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="50,30" size="5,610" zPosition="1" backgroundColor="#30403f3f" />
+                          <eLabel position="50,635" size="1175,5" zPosition="1" backgroundColor="#30403f3f" />
+                          <!-- Date/Time -->
+                          <widget source="global.CurrentTime" render="Label" position="815,86" zPosition="1" size="310,30" font="RegularIE2;20" halign="left" foregroundColor="#00ddebe8" backgroundColor="#00000000" transparent="1" noWrap="1">
+                            <convert type="ClockToText">Format:%A %d %B %Y</convert>
+                          </widget>
+                          <widget source="global.CurrentTime" render="Label" position="1090,86" zPosition="1" size="125,30" font="RegularIE2;20" halign="right" foregroundColor="#00ddebe8" backgroundColor="#00000000" transparent="1" >
+                            <convert type="ClockToText">Format:%H:%M:%S</convert>
+                          </widget>
+                          <!-- Progres Bar -->                        
+                          <widget name="iprogress_blu" position="158,556" zPosition="1" size="560,20" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Buttons/progress_big_blue.png" borderWidth="1" borderColor="#00cccccc" transparent="1" />
+                          <!-- List -->
+                          <widget name="text" position="96,130" size="680,480" font="RegularIE2;20" zPosition="1" halign="center" valign="top" transparent="1" />
+                          <widget name="ErrorPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_error_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="QuestionPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_question_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="DttScanPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_question_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="DttScan2Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_question_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="InfoPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_info_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="WaitPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_wait_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="WarningPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_esc_yellow_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="WarningRedPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/input_esc_red_128px.png" position="957,383" size="128,128" alphatest="on" />
+                          <widget name="list" position="96,290" size="680,200" foregroundColor="#00ddebe8" backgroundColorSelected="#30403f3f" zPosition="1" transparent="1" />
+               </screen>
