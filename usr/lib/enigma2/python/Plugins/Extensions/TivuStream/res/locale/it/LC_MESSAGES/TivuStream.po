@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TivuStream\n"
 "Report-Msgid-Bugs-To: Lululla <ekekaz@gmail.com>\n"
-"POT-Creation-Date: 2018-05-21 20:18+0200\n"
-"PO-Revision-Date: 2018-05-21 20:19+0200\n"
+"POT-Creation-Date: 2018-11-13 20:26+0100\n"
+"PO-Revision-Date: 2018-11-13 20:26+0100\n"
 "Last-Translator: Lululla <ekekaz@gmail.com>\n"
 "Language-Team: lululla\n"
 "Language: it_IT\n"
@@ -17,156 +17,91 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: plugin.py:79
-#, python-format
-msgid ""
-"TivuStream V. %s (C)\n"
-"by Lululla\n"
-"Credits:\n"
-"Buio2005,Furlan,Daimon\n"
-msgstr ""
+msgid "Credits: Buio2005,Furlan,Daimon"
+msgstr "Credits: Buio2005,Furlan,Daimon"
 
-#: plugin.py:278
-msgid "..:: ABOUT ::.."
-msgstr "..:: ABOUT ::.."
+#: plugin.py:303
+msgid "..:: TivuStream About ::.."
+msgstr "..:: TivuStream About ::.."
 
-#: plugin.py:279 plugin.py:453 plugin.py:687 plugin.py:990 plugin.py:1331
+#: plugin.py:304 plugin.py:433 plugin.py:656 plugin.py:946 plugin.py:1284
 msgid "Esci"
 msgstr "Esci"
 
-#: plugin.py:280
+#: plugin.py:305
 msgid "Config"
 msgstr "Config"
 
-#: plugin.py:281
+#: plugin.py:306
 msgid "Open List"
 msgstr "Open List"
 
-#: plugin.py:282 plugin.py:456
+#: plugin.py:307 plugin.py:436
 msgid "Player List"
 msgstr "Player List"
 
-#: plugin.py:283 plugin.py:451 plugin.py:682 plugin.py:988 plugin.py:1209
-#: plugin.py:1329 plugin.py:1542 plugin.py:1626
+#: plugin.py:308 plugin.py:431 plugin.py:651 plugin.py:944 plugin.py:1162
+#: plugin.py:1282 plugin.py:1495 plugin.py:1580
 msgid "Maintainer"
 msgstr "Maintainer"
 
-#: plugin.py:284 plugin.py:452 plugin.py:683 plugin.py:989 plugin.py:1210
-#: plugin.py:1330 plugin.py:1543 plugin.py:1627
+#: plugin.py:309 plugin.py:432 plugin.py:652 plugin.py:945 plugin.py:1163
+#: plugin.py:1283 plugin.py:1496 plugin.py:1581
 msgid "@Lululla"
 msgstr "@Lululla"
 
-#: plugin.py:285 plugin.py:449 plugin.py:680 plugin.py:986 plugin.py:1208
-#: plugin.py:1328 plugin.py:1544 plugin.py:1625
+#: plugin.py:310 plugin.py:429 plugin.py:649 plugin.py:942 plugin.py:1161
+#: plugin.py:1281 plugin.py:1497 plugin.py:1579
 #, python-format
 msgid "Versione %s"
 msgstr "Versione %s"
 
-#: plugin.py:323
+#: plugin.py:350
 msgid "Check Connection wait please..."
 msgstr "Check Connection wait please..."
 
-#: plugin.py:356
+#: plugin.py:367
 msgid "Errore nel download degli aggiornamenti"
 msgstr "Errore nel download degli aggiornamenti"
 
-#: plugin.py:359
+#: plugin.py:372
 msgid "Server Off"
 msgstr "Server Off"
 
-#: plugin.py:415 plugin.py:417 plugin.py:422
-msgid "=========================="
-msgstr ""
+#: plugin.py:430
+msgid "..:: TivuStream List ::.."
+msgstr "..:: TivuStream List ::.."
 
-#: plugin.py:416
-msgid "= CONTROLLA  CONNESSIONE ="
-msgstr ""
-
-#: plugin.py:418
-msgid "====== CHECK SERVER ======"
-msgstr ""
-
-#: plugin.py:419
-msgid "======  SUPPORT ON  ======"
-msgstr ""
-
-#: plugin.py:420
-msgid "===== PATBUWEB.COM ======="
-msgstr ""
-
-#: plugin.py:421
-msgid "= LULULLA.ALTERVISTA.ORG ="
-msgstr ""
-
-#: plugin.py:427 plugin.py:439
-msgid "Open_FREE_ALL"
-msgstr ""
-
-#: plugin.py:428 plugin.py:440
-msgid "Open_ITALIA"
-msgstr ""
-
-#: plugin.py:429 plugin.py:441
-msgid "Open_INTERNATIONAL"
-msgstr ""
-
-#: plugin.py:430 plugin.py:442
-msgid "Open_MEDIAPLAY"
-msgstr ""
-
-#: plugin.py:431 plugin.py:443
-msgid "Open_SPORT"
-msgstr ""
-
-#: plugin.py:432 plugin.py:444
-msgid "Open_STREAMLINK"
-msgstr ""
-
-#: plugin.py:433 plugin.py:445
-msgid "Open_MUSICA"
-msgstr ""
-
-#: plugin.py:434 plugin.py:446
-msgid "Open_RADIO"
-msgstr ""
-
-#: plugin.py:435
-msgid "Open_ADULTXXX"
-msgstr ""
-
-#: plugin.py:450
-msgid "..:: TivuStream ::.."
-msgstr "..:: TivuStream ::.."
-
-#: plugin.py:454
+#: plugin.py:434
 msgid "Ricarica Bouquet"
 msgstr "Ricarica Bouquet"
 
-#: plugin.py:455
+#: plugin.py:435
 msgid "Elimina"
 msgstr "Elimina"
 
-#: plugin.py:548
+#: plugin.py:524
 msgid "Bouquet non Installato"
 msgstr "Bouquet non installato"
 
-#: plugin.py:573 plugin.py:849 plugin.py:897 plugin.py:949
+#: plugin.py:549 plugin.py:809 plugin.py:856 plugin.py:905
 msgid "CONTROLLA NELLA LISTA FAVORITI..."
 msgstr "CONTROLLA NELLA LISTA FAVORITI..."
 
-#: plugin.py:600 plugin.py:627 plugin.py:861 plugin.py:909 plugin.py:961
+#: plugin.py:575 plugin.py:599 plugin.py:821 plugin.py:868 plugin.py:917
 msgid "Riordino liste Favorite in Corso"
 msgstr "Riordino liste favoriti in corso..."
 
-#: plugin.py:600 plugin.py:624 plugin.py:627 plugin.py:861 plugin.py:909
-#: plugin.py:961
+#: plugin.py:575 plugin.py:596 plugin.py:599 plugin.py:821 plugin.py:868
+#: plugin.py:917
 msgid "Attendere prego ..."
 msgstr "Attendere prego ..."
 
-#: plugin.py:614
+#: plugin.py:587
 msgid "ERRORE CONNESSIONE O UNKNOW"
 msgstr "ERRORE CONNESSIONE O UNKNOW"
 
-#: plugin.py:617
+#: plugin.py:590
 msgid ""
 "StreamLink non Installato!!!\n"
 "\n"
@@ -176,122 +111,126 @@ msgstr ""
 "\n"
 "Installare prima"
 
-#: plugin.py:620
+#: plugin.py:592
 #, python-format
 msgid "Installare lista %s selezionata"
 msgstr "Installare lista %s selezionata"
 
-#: plugin.py:624
+#: plugin.py:596
 msgid "Installazione in Corso"
 msgstr "Installazione in Corso"
 
-#: plugin.py:636
+#: plugin.py:606
 msgid "ATTENZIONE"
 msgstr "ATTENZIONE"
 
-#: plugin.py:636
+#: plugin.py:606
 msgid "Eliminare le liste canali TivuStream"
 msgstr "Eliminare le liste canali TivuStream"
 
-#: plugin.py:660
+#: plugin.py:628
 msgid "Liste canali TivuStream eliminate con successo"
 msgstr "Liste canali TivuStream eliminate con successo"
 
-#: plugin.py:681
-msgid "..:: TivuStream M3U ::.."
-msgstr "..:: TivuStream M3U ::.."
+#: plugin.py:650 plugin.py:943
+msgid "..:: TivuStream Player ::.."
+msgstr "..:: TivuStream Player ::.."
 
-#: plugin.py:686
+#: plugin.py:655
 #, python-format
-msgid "Cartella Configurata in Config %s"
-msgstr "Cartella Configurata in Config %s"
+msgid "Percorso cartella %s"
+msgstr "Percorso cartella %s"
 
-#: plugin.py:690
+#: plugin.py:657
 msgid "Converti StreamLink"
 msgstr "Converti StreamLink"
 
-#: plugin.py:692
+#: plugin.py:658
 msgid "Converti ExtePlayer3"
 msgstr "Converti ExtePlayer3"
 
-#: plugin.py:693
+#: plugin.py:659
 msgid "Converti Gstreamer"
 msgstr "Converti Gstreamer"
 
-#: plugin.py:723
-msgid "TivuStream: Open Select"
-msgstr "TivuStream: Open Select"
+#: plugin.py:686
+msgid ""
+"OK\n"
+"Apri Selezione"
+msgstr ""
+"OK\n"
+"Apri Selezione"
 
-#: plugin.py:755
+#: plugin.py:718
 msgid "Vuoi rimuovere?"
 msgstr "Vuoi rimuovere?"
 
-#: plugin.py:824 plugin.py:874 plugin.py:925
+#: plugin.py:784 plugin.py:833 plugin.py:881
 #, python-format
 msgid "Converting %s"
 msgstr "Conversione %s"
 
-#: plugin.py:848 plugin.py:896 plugin.py:948 plugin.py:968 plugin.py:971
-msgid "TivuStream m3U: Open Select"
-msgstr "TivuStream m3U: Open Select"
+#: plugin.py:808 plugin.py:855 plugin.py:904 plugin.py:923 plugin.py:926
+msgid "TivuStream m3U: Apri Selezione"
+msgstr "TivuStream m3U: Apri Selezione"
 
-#: plugin.py:987
-msgid "..:: M3U PLAYER ::.."
-msgstr "..:: M3U PLAYER ::.."
-
-#: plugin.py:991
+#: plugin.py:947
 msgid "Play"
 msgstr "Play"
 
-#: plugin.py:994
-msgid "OK: Anteprima"
-msgstr "OK: Anteprima"
+#: plugin.py:950
+msgid ""
+"OK\n"
+"Anteprima"
+msgstr ""
+"OK\n"
+"Anteprima"
 
-#: plugin.py:995
+#: plugin.py:951
 msgid "Aggiungi Stream a Bouquet"
 msgstr "Aggiungi Stream a Bouquet"
 
-#: plugin.py:1001
-msgid "TivuStream N."
-msgstr "TivuStream N."
+#: plugin.py:958
+msgid "N."
+msgstr "N."
 
-#: plugin.py:1207
-msgid "..:: Add Stream ::.."
-msgstr "..:: Add Stream ::.."
+#: plugin.py:1160
+msgid "..:: TivuStream Add Stream ::.."
+msgstr "..:: TivuStream Add Stream ::.."
 
-#: plugin.py:1215
+#: plugin.py:1169
 msgid "Seleziona i flussi da aggiungere al bouquet"
 msgstr "Seleziona i flussi da aggiungere al bouquet"
 
-#: plugin.py:1233
+#: plugin.py:1185
 msgid "Add IPTV Channels"
 msgstr "Add IPTV Channels"
 
-#: plugin.py:1276
+#: plugin.py:1228
 msgid "Enter name"
 msgstr "Inserire Nome"
 
-#: plugin.py:1327
-msgid "..:: TivuStream CONFIG ::.."
-msgstr "..:: TivuStream CONFIG ::.."
+#: plugin.py:1280
+msgid "..:: TivuStream Config ::.."
+msgstr "..:: TivuStream Config ::.."
 
-#: plugin.py:1332
+#: plugin.py:1285
 msgid "Aggiorna Plugin"
 msgstr "Aggiorna Plugin"
 
-#: plugin.py:1333
+#: plugin.py:1286
 msgid "Salva"
 msgstr "Salva"
 
-#: plugin.py:1337
-msgid "TivuStream CONFIG"
-msgstr "TivuStream CONFIG"
+#: plugin.py:1290
+msgid "TivuStream Config"
+msgstr "TivuStream Config"
 
-#: plugin.py:1378 plugin.py:1381 plugin.py:1384
+#: plugin.py:1330 plugin.py:1333 plugin.py:1336
 msgid "TivuStream versione: "
 msgstr "TivuStream versione: "
 
-#: plugin.py:1378 plugin.py:1381
+#: plugin.py:1330 plugin.py:1333
 msgid ""
 "\n"
 "Nessun aggiornamento online!"
@@ -299,7 +238,7 @@ msgstr ""
 "\n"
 "Nessun aggiornamento online!"
 
-#: plugin.py:1378 plugin.py:1381
+#: plugin.py:1330 plugin.py:1333
 msgid ""
 "\n"
 "se ti piace puoi fare una libera donazione\n"
@@ -309,7 +248,7 @@ msgstr ""
 "se ti piace puoi fare una libera donazione\n"
 "www.paypal.me/TivuStream"
 
-#: plugin.py:1384
+#: plugin.py:1336
 msgid ""
 "\n"
 "Ultimo aggiornamento "
@@ -317,7 +256,7 @@ msgstr ""
 "\n"
 "Ultimo aggiornamento "
 
-#: plugin.py:1384
+#: plugin.py:1336
 msgid ""
 " disponibile!  \n"
 "ChangeLog:"
@@ -325,11 +264,11 @@ msgstr ""
 " disponibile!  \n"
 "ChangeLog:"
 
-#: plugin.py:1389
+#: plugin.py:1341
 msgid "Nessun aggiornamento disponibile"
 msgstr "Nessun aggiornamento disponibile"
 
-#: plugin.py:1389
+#: plugin.py:1341
 msgid ""
 "\n"
 "Nessuna connessione Internet o server OFF"
@@ -337,7 +276,7 @@ msgstr ""
 "\n"
 "Nessuna connessione Internet o server OFF"
 
-#: plugin.py:1389
+#: plugin.py:1341
 msgid ""
 "\n"
 "Prego riprova piu tardi o cambia SERVER in menu config."
@@ -345,83 +284,83 @@ msgstr ""
 "\n"
 "Prego riprova piu tardi o cambia SERVER in menu config."
 
-#: plugin.py:1401
+#: plugin.py:1353
 msgid "Server:"
 msgstr "Server:"
 
-#: plugin.py:1401
+#: plugin.py:1353
 msgid "Scelta del Server"
 msgstr "Scelta del Server"
 
-#: plugin.py:1402
+#: plugin.py:1354
 msgid "Auto Update Plugin:"
 msgstr "Auto Update Plugin:"
 
-#: plugin.py:1402
+#: plugin.py:1354
 msgid "Aggiornarmento plugin automatico"
 msgstr "Aggiornarmento plugin automatico"
 
-#: plugin.py:1403
+#: plugin.py:1355
 msgid "Password Personale:"
 msgstr "Password Personale:"
 
-#: plugin.py:1403
+#: plugin.py:1355
 msgid "Inserisci la password per scaricare Liste XXX Adulti"
 msgstr "Inserisci la password per scaricare Liste XXX Adulti"
 
-#: plugin.py:1404
+#: plugin.py:1356
 msgid "Posizione IPTV bouquets "
 msgstr "Posizione IPTV bouquets "
 
-#: plugin.py:1404
+#: plugin.py:1356
 msgid "Configura posizione dei Bouquet delle liste convertite"
 msgstr "Configura posizione dei Bouquet delle liste convertite"
 
-#: plugin.py:1405
+#: plugin.py:1357
 msgid "Liste Player <.m3u>:"
 msgstr "Liste Player <.m3u>:"
 
-#: plugin.py:1405
+#: plugin.py:1357
 msgid "Percorso cartella contenente i file .m3u"
 msgstr "Percorso cartella contenente i file .m3u"
 
-#: plugin.py:1406
+#: plugin.py:1358
 msgid "Tipo Services Reference"
 msgstr "Tipo Services Reference"
 
-#: plugin.py:1406
+#: plugin.py:1358
 msgid "Configura Service Reference Gstreamer/Exteplayer3/StreamLink"
 msgstr "Configura Service Reference Gstreamer/Exteplayer3/StreamLink"
 
-#: plugin.py:1407
+#: plugin.py:1359
 msgid "Link in Extensions Menu:"
 msgstr "Link in Extensions Menu:"
 
-#: plugin.py:1407
+#: plugin.py:1359
 msgid "Mostra Plugin in Extensions Menu"
 msgstr "Mostra Plugin in Extensions Menu"
 
-#: plugin.py:1408
+#: plugin.py:1360
 msgid "Link in Menu Principale:"
 msgstr "Link in Menu Principale:"
 
-#: plugin.py:1408
+#: plugin.py:1360
 msgid "Mostra Plugin in Main Menu"
 msgstr "Mostra Plugin in Main Menu"
 
-#: plugin.py:1454
+#: plugin.py:1406
 msgid "Cartella Liste m3u non rilevato!"
 msgstr "Cartella Liste m3u non rilevato!"
 
-#: plugin.py:1464
+#: plugin.py:1416
 msgid "Impostazioni salvate correttamente !"
 msgstr "Impostazioni salvate correttamente !"
 
-#: plugin.py:1493
+#: plugin.py:1445
 msgid "Veramente chiudere senza salvare le impostazioni?"
 msgstr "Veramente chiudere senza salvare le impostazioni?"
 
-#: plugin.py:1502
+#: plugin.py:1454
 #, python-format
 msgid ""
 "Nuova Versione Online!!!\n"
@@ -432,16 +371,16 @@ msgstr ""
 "\n"
 "Aggiornare Plugin alla Versione %s ?"
 
-#: plugin.py:1507
+#: plugin.py:1459
 msgid "Aggiornare Plugin ?"
 msgstr "Aggiornare il Plugin ?"
 
-#: plugin.py:1519
+#: plugin.py:1471
 #, python-format
 msgid "Aggiorno Plugin: %s"
 msgstr "Aggiornamento Plugin: %s"
 
-#: plugin.py:1525
+#: plugin.py:1477
 msgid ""
 "Plugin Aggiornato!\n"
 "Riavvio interfaccia utente"
@@ -449,88 +388,60 @@ msgstr ""
 "Plugin Aggiornato!\n"
 "Riavvio interfaccia utente"
 
-#: plugin.py:1541
+#: plugin.py:1494
 msgid "..:: TivuStream Console ::.."
 msgstr "..:: TivuStream Console ::.."
 
-#: plugin.py:1568
+#: plugin.py:1521
 msgid "Esecuzione in corso:"
 msgstr "Esecuzione in corso:"
 
-#: plugin.py:1580
+#: plugin.py:1533
 msgid "Esecuzione finita!!"
 msgstr "Esecuzione terminata!"
 
-#: plugin.py:1624
+#: plugin.py:1578
 msgid "..:: TivuStream Message ::.."
 msgstr "..:: TivuStream Message ::.."
 
-#: plugin.py:1649
+#: plugin.py:1603
 msgid "Question"
 msgstr "Question"
 
-#: plugin.py:1650
+#: plugin.py:1604
 msgid "Information"
 msgstr "Information"
 
-#: plugin.py:1651
+#: plugin.py:1605
 msgid "Warning"
 msgstr "Warning"
 
-#: plugin.py:1652
+#: plugin.py:1606
 msgid "Error"
 msgstr "Error"
 
-#: plugin.py:1652
+#: plugin.py:1606
 msgid "Message"
 msgstr "Message"
 
-#: plugin.py:1657 plugin.py:1659
+#: plugin.py:1611 plugin.py:1613
 msgid "Si"
 msgstr "Si"
 
-#: plugin.py:1657 plugin.py:1659
+#: plugin.py:1611 plugin.py:1613
 msgid "No"
 msgstr "No"
 
-#: plugin.py:1801
+#: plugin.py:1755
 msgid "TivuStream"
 msgstr "TivuStream"
 
-#: plugin.py:1802 plugin.py:1804
+#: plugin.py:1756 plugin.py:1758
 msgid "TivuStream v."
 msgstr "TivuStream v."
 
-#~ msgid ""
-#~ "TivuStream V1.0 (C) 2018 - Lululla\n"
-#~ "Credits:\n"
-#~ "Buio2005,Furlan,Daimon\n"
-#~ msgstr ""
-#~ "TivuStream V1.0 (C) 2018 - Lululla\n"
-#~ "Credits:\n"
-#~ "Buio2005,Furlan,Daimon\n"
+#~ msgid "..:: TivuStream M3U List ::.."
+#~ msgstr "..:: TivuStream M3U List ::.."
 
-#~ msgid "========================="
-#~ msgstr "========================="
-
-#~ msgid "==CONTROLLA CONNESSIONE=="
-#~ msgstr "==CONTROLLA CONNESSIONE=="
-
-#~ msgid "======CHECK  SERVER======"
-#~ msgstr "======CHECK  SERVER======"
-
-#~ msgid "Rimuovi"
-#~ msgstr "Rimuovi"
-
-#~ msgid "Configura la cartella contenente i file .m3u"
-#~ msgstr "Configura la cartella contenente i file .m3u"
-
-#~ msgid "Configura Service Reference Gstreamer o Exteplayer3"
-#~ msgstr "Configura Service Reference Gstreamer o Exteplayer3"
-
-#~ msgid ""
-#~ "\n"
-#~ "Grazie a coloro che hanno lavorato al progetto"
-#~ msgstr ""
-#~ "\n"
-#~ "Grazie a coloro che hanno lavorato al progetto"
+#~ msgid "..:: TivuStream M3U Player ::.."
+#~ msgstr "..:: TivuStream M3U Player ::.."

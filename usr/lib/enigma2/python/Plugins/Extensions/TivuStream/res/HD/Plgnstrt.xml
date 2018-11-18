@@ -1,0 +1,5 @@
+<screen name="plgnstrt" flags="wfNoBorder" position="0,0" size="1280,720" title="-TivuStream-" backgroundColor="transparent">
+    <ePixmap position="889,19" zPosition="1" size="385,80" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/logo2.png" alphatest="blend" />
+    <ePixmap position="32,26" zPosition="1" size="230,79" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/logosk.png" alphatest="blend" />
+    <widget name="text" position="0,0" zPosition="3" size="1280,720" font="OpenFont2;28" halign="center" foregroundColor="#006666" backgroundColor="white" transparent="0" />  
+    </screen>
