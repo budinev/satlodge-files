@@ -7,10 +7,8 @@
   <widget name="Maintainer2" position="167,672" halign="left" size="216,39" zPosition="3" font="OpenFont1;20" foregroundColor="#ffff00" backgroundColor="#00000000" transparent="1" />
   <widget name="infoc" position="754,672" halign="right" size="189,39" zPosition="3" font="OpenFont1;20" foregroundColor="#00ff00" backgroundColor="#00000000" transparent="1" />
   <widget name="infoc2" position="944,672" halign="left" size="332,39" zPosition="3" font="OpenFont1;20" foregroundColor="#ffff00" backgroundColor="#00000000" transparent="1" />
-
   <ePixmap position="21,95" zPosition="1" size="230,100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/logosk.png" alphatest="blend" />
   <widget source="session.VideoPicture" render="Pig" position="839,128" size="429,246" backgroundColor="transparent" zPosition="3" />
-  
   <widget name="fitred" position="25,220" zPosition="3" size="225,68" font="OpenFont2;26" halign="center" foregroundColor="red" transparent="1" />
   <widget name="fitgreen" position="23,316" zPosition="3" size="225,68" font="OpenFont2;26" halign="center" foregroundColor="green" transparent="1" />
   <widget name="fityellow" position="22,415" zPosition="3" size="225,68" font="OpenFont2;26" halign="center" foregroundColor="yellow" transparent="1" />
@@ -24,7 +22,6 @@
   <eLabel position="22,497" size="224,10" backgroundColor="blue" zPosition="1" />
   -->
   <!-- selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/sel32.png" -->
-  
   <eLabel name="label" zPosition="1" position="377,239" size="450,320" transparent="1" />
   <widget name="config" position="377,239" size="450,320" zPosition="3" font="OpenFont1;20" scrollbarMode="showOnDemand" foregroundColor="#ffff00" transparent="1" />
   <widget name="text" position="836,465" size="436,185" font="OpenFont1;20" foregroundColor="#ffff00" transparent="1" zPosition="4" />

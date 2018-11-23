@@ -1,4 +1,0 @@
-<screen name="NotifyText" position="900,650" zPosition="-1" size="380,60" flags="wfNoBorder" backgroundColor="transparent">
-                  <widget name="Text" position="120,0" zPosition="1" size="260,60" font="Regular; 20" valign="center" halign="left" foregroundColor="#90ec7420" transparent="1" />
-                  <ePixmap position="0,0" zPosition="1" size="113,60" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/iSettingE2/Skins/HDR/Icons/uplogo.png" alphatest="blend" transparent="1" />
-              </screen>

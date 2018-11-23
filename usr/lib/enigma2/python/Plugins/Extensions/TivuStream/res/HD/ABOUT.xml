@@ -22,9 +22,4 @@
   <widget name="info" position="836,465" size="436,185" font="OpenFont1;20" foregroundColor="#ffff00" transparent="1" zPosition="4" />
   <eLabel name="label" zPosition="1" position="377,126" size="450,463" transparent="1" />
   <widget name="text" position="377,126" zPosition="5" size="450,463" font="OpenFont1;20" foregroundColor="#ffff00" /> 
-  <!--
-  <widget name="status" zPosition="3" position="390,623" size="413,34" transparent="1" font="OpenFont1;20" foregroundColor="foreground" backgroundColor="background" valign="center" halign="left" noWrap="1" />
-  <widget source="progress" zPosition="3" render="Progress" position="881,664" size="392,22" transparent="1" borderWidth="0" />
-  <widget source="progresstext" render="Label" position="493,663" zPosition="3" font="OpenFont1;18" halign="center" transparent="1" size="387,24" foregroundColor="foreground" backgroundColor="background" /> 
-  -->
 </screen>

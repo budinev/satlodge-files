@@ -24,15 +24,27 @@
 <eLabel position="677,982" size="330,10" backgroundColor="yellow" zPosition="1" />
 <eLabel position="1008,982" size="330,10" backgroundColor="blue" zPosition="1" />
 
+<!--
   <eLabel name="label" zPosition="1" position="71,87" size="11,740" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="781,87" size="13,739" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="71,87" size="722,13" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="71,812" size="722,14" backgroundColor="red" transparent="0" />
-
-
+-->
+<!--
   <widget name="list" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel32_1060.png" position="83,100" size="700,711" font="OpenFont1;36" foregroundColor="#660000" backgroundColor="blue" foregroundColorSelected="yellow" backgroundColorSelected="blue" zPosition="3" scrollbarMode="showOnDemand" itemHeight="40" transparent="0" />
+-->
+<!--
+  <widget name="list" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel50_1060.png" position="239,207" size="340,500" 
+    foregroundColorSelected="#ff9900" backgroundColorSelected="#000000" zPosition="3" scrollbarMode="showOnDemand" 
+    itemHeight="50" transparent="1" />  
+-->    
+  <widget name="list" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel50_1060.png" position="239,207" size="550,500" 
+    foregroundColorSelected="#ff9900" backgroundColorSelected="#000000" zPosition="3" scrollbarMode="showOnDemand" 
+    itemHeight="50" transparent="1" />    
     
-  <widget name="info" position="1343,896" zPosition="5" size="545,84" font="OpenFont2;40" foregroundColor="#ff9900" backgroundColor="#00000000" transparent="1" halign="center" valign="left" />
+    
+    
+  <widget name="info" position="1343,896" zPosition="5" size="545,84" font="OpenFont2;40" foregroundColor="#ff9900" backgroundColor="#00000000" transparent="1" halign="center" />
   <widget name="path" position="1121,828" zPosition="3" size="716,63" font="OpenFont1;34" foregroundColor="#ff9900" backgroundColor="#00000000" transparent="1" halign="right" />
 
 </screen>

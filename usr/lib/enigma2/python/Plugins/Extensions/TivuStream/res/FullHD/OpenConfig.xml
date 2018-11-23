@@ -26,15 +26,17 @@
 <!--
 <eLabel position="1008,982" size="330,10" backgroundColor="blue" zPosition="1" />
 -->
-
+<!--
   <eLabel name="label" zPosition="1" position="68,87" size="13,522" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="781,87" size="13,522" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="71,87" size="722,13" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="71,597" size="722,13" backgroundColor="red" transparent="0" />
 
   <widget name="config" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel32_1060.png" position="83,100" size="700,500" itemHeight="40" foregroundColor="#660000" backgroundColor="blue" foregroundColorSelected="yellow" backgroundColorSelected="blue" scrollbarMode="showOnDemand" transparent="0" zPosition="1" />
-
-  <widget name="text" position="1119,742" size="647,261" font="Regular;30" foregroundColor="#ffff00" transparent="1" zPosition="4" valign="top" />
-  <widget name="description" position="50,762" size="970,81" font="Regular; 36" foregroundColor="#ffff00" transparent="1" zPosition="4" />
+-->
+  <widget name="config" position="239,207" size="648,500" foregroundColorSelected="#ff9900" backgroundColorSelected="#000000" zPosition="3" scrollbarMode="showOnDemand" itemHeight="50" transparent="1" />  
+    
+  <widget name="text" position="1119,742" size="647,261" font="Regular;30" foregroundColor="#ffff00" transparent="1" zPosition="4" />
+  <widget name="description" position="140,762" size="970,81" font="Regular; 36" foregroundColor="#ffff00" transparent="1" zPosition="4" />
 
 </screen>

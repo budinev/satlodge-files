@@ -1,0 +1,51 @@
+<screen name="tvsMessageBox" flags="wfNoBorder" position="center,center" size="1280,720" title="-TivuStream-" backgroundColor="#00000000">
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/1280_720backtv.png" alphatest="blend" />
+  <widget name="fittitle" position="379,44" zPosition="3" size="494,37" font="OpenFont1;24" foregroundColor="#3399ff" backgroundColor="#000000" transparent="1" halign="center" />
+  <widget name="version" position="320,672" zPosition="3" size="261,38" font="OpenFont1;20" foregroundColor="#00ff00" transparent="1" halign="right" />
+  <widget name="version2" position="583,672" halign="left" size="250,39" zPosition="3" font="OpenFont1;20" foregroundColor="#ffff00" backgroundColor="#00000000" transparent="1" />
+  <widget name="Maintainer" position="6,672" halign="right" size="160,38" zPosition="3" font="OpenFont1;20" foregroundColor="#00ff00" backgroundColor="#00000000" transparent="1" />
+  <widget name="Maintainer2" position="167,672" halign="left" size="216,39" zPosition="3" font="OpenFont1;20" foregroundColor="#ffff00" backgroundColor="#00000000" transparent="1" />
+  <widget name="infoc" position="754,672" halign="right" size="189,39" zPosition="3" font="OpenFont1;20" foregroundColor="#00ff00" backgroundColor="#00000000" transparent="1" />
+  <widget name="infoc2" position="944,672" halign="left" size="332,39" zPosition="3" font="OpenFont1;20" foregroundColor="#ffff00" backgroundColor="#00000000" transparent="1" />
+
+  <ePixmap position="21,95" zPosition="1" size="230,100" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/logosk.png" alphatest="blend" />
+  <widget source="session.VideoPicture" render="Pig" position="839,128" size="429,246" backgroundColor="transparent" zPosition="3" />
+  <eLabel name="label" zPosition="1" position="377,239" size="450,320" transparent="1" />
+  
+  <widget name="ErrorPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/input_error.png" position="565,159" size="54,54" alphatest="blend" />
+  <widget name="QuestionPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/input_question.png" position="564,163" size="54,54" alphatest="blend" />
+  <widget name="InfoPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/input_info.png" position="564,163" size="54,54" alphatest="blend" />
+  <widget name="WarningPixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/input_warning.png" position="562,159" size="54,54" alphatest="blend" />
+  <widget name="list" position="377,239" size="450,320" itemHeight="32" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/HD/sel32.png" foregroundColor="#fff700" transparent="1" zPosition="10" />
+  <widget name="Text" font="Regular;20" position="388,384" size="459,220" foregroundColor="#fff700" transparent="1" zPosition="10" />
+  <widget name="text" font="Regular;20" position="390,389" size="457,214" foregroundColor="#fff700" transparent="1" zPosition="10" />
+  <widget name="selectedChoice" position="319,604" zPosition="3" size="624,41" font="OpenFont1;24" transparent="1" foregroundColor="#ffffff" halign="center" />
+  <applet type="onLayoutFinish">
+<!-- # this should be factored out into some helper code, but currently demonstrates applets. -->
+<!-- from enigma import eSize, ePoint -->
+<!-- orgwidth = self.instance.size().width() -->
+<!-- orgpos = self.instance.position() -->
+<!-- textsize = self["text"].getSize() -->
+<!-- # y size still must be fixed in font stuff... -->
+<!-- textsize = (textsize[0] + 80, textsize[1] + 80) -->
+<!-- offset = 30 -->
+<!-- if self.type == self.TYPE_YESNO: -->
+	<!-- offset = 70 -->
+<!-- wsizex = textsize[0] + 120 -->
+<!-- wsizey = textsize[1] + offset -->
+<!-- if (800 &gt; wsizex): -->
+	<!-- wsizex = 800 -->
+<!-- wsize = (wsizex, wsizey) -->
+<!-- # resize -->
+<!-- self.instance.resize(eSize(*wsize)) -->
+<!-- # resize label -->
+<!-- self["text"].instance.resize(eSize(*textsize)) -->
+<!-- # move list -->
+<!-- listsize = (wsizex - 15, 64) -->
+<!-- self["list"].instance.move(ePoint(10, textsize[1])) -->
+<!-- self["list"].instance.resize(eSize(*listsize)) -->
+<!-- # center window -->
+<!-- newwidth = wsize[0] -->
+<!-- self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y())) -->
+    </applet>
+</screen>

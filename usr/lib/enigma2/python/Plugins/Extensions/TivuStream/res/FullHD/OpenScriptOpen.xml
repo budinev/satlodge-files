@@ -18,20 +18,34 @@
   <widget name="fityellow" position="674,896" zPosition="3" size="330,85" font="OpenFont2;40" halign="center" foregroundColor="yellow" transparent="1" />
   <widget name="fitgreen" position="341,896" zPosition="3" size="330,85" font="OpenFont2;40" halign="center" foregroundColor="green" transparent="1" />
   <widget name="fitblue" position="1007,896" zPosition="3" size="330,85" font="OpenFont2;40" halign="center" foregroundColor="blue" transparent="1" />
+  <widget name="fitmenu" position="1337,896" zPosition="3" size="330,85" font="OpenFont2;40" halign="center" foregroundColor="white" transparent="1" />
 
 <eLabel position="13,982" size="330,10" backgroundColor="red" zPosition="1" />
 <eLabel position="344,982" size="330,10" backgroundColor="green" zPosition="1" />
 <eLabel position="677,982" size="330,10" backgroundColor="yellow" zPosition="1" />
 <eLabel position="1008,982" size="330,10" backgroundColor="blue" zPosition="1" />
+<eLabel position="1338,982" size="330,10" backgroundColor="white" zPosition="1" />
 
-
+<!--
   <eLabel name="label" zPosition="1" position="71,87" size="13,522" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="781,87" size="13,522" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="71,87" size="723,13" backgroundColor="red" transparent="0" />
   <eLabel name="label" zPosition="1" position="71,597" size="723,13" backgroundColor="red" transparent="0" />
-
+-->
+<!--
   <widget name="list" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel32_1060.png" position="83,100" size="700,500" font="OpenFont1;40" foregroundColor="#660000" backgroundColor="blue" foregroundColorSelected="yellow" backgroundColorSelected="blue" zPosition="3" scrollbarMode="showOnDemand" itemHeight="50" transparent="0" />
-  
-  
-  
+--> 
+<!-- 
+  <widget name="list" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel32_1060.png" position="83,100" size="700,500" font="OpenFont1;40" 
+    foregroundColor="#ffffff" backgroundColor="#000000" foregroundColorSelected="#ffffff" backgroundColorSelected="#000000" zPosition="3" scrollbarMode="showOnDemand" 
+    itemHeight="50" transparent="1" />
+-->     
+<!--    
+  <widget name="list" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel50_1060.png" position="239,207" size="340,500" font="OpenFont2;40" 
+    foregroundColorSelected="#ff9900" backgroundColorSelected="#000000" zPosition="3" scrollbarMode="showOnDemand" 
+    itemHeight="50" transparent="1" />  
+-->
+  <widget name="list" position="239,207" size="400,500" font="OpenFont2;40" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/FullHD/sel50_1060.png" foregroundColorSelected="#ff9900" backgroundColorSelected="#000000" zPosition="3" scrollbarMode="showOnDemand" itemHeight="50" transparent="1" />  
+
+    
 </screen>

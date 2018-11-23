@@ -14,11 +14,14 @@
   <widget name="fitgreen" position="23,316" zPosition="3" size="225,68" font="OpenFont2;26" halign="center" foregroundColor="green" transparent="1" />
   <widget name="fityellow" position="22,415" zPosition="3" size="225,68" font="OpenFont2;26" halign="center" foregroundColor="yellow" transparent="1" />
   <widget name="fitblue" position="20,508" zPosition="3" size="225,68" font="OpenFont2;26" halign="center" foregroundColor="blue" transparent="1" />
+  <widget name="fitmenu" position="20,599" zPosition="3" size="225,68" font="OpenFont2;26" halign="center" foregroundColor="blue" transparent="1" />  
+  
+  
   <eLabel position="26,202" size="225,17" backgroundColor="red" zPosition="1" />
   <eLabel position="23,305" size="226,10" backgroundColor="green" zPosition="1" />
   <eLabel position="23,404" size="223,10" backgroundColor="yellow" zPosition="1" />
   <eLabel position="22,497" size="224,10" backgroundColor="blue" zPosition="1" />
-  
+  <eLabel position="22,590" size="224,10" backgroundColor="white" zPosition="1" />  
   <eLabel name="label" zPosition="1" position="377,239" size="450,320" transparent="1" />
   
   <widget name="list" position="377,239" size="450,320" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="#ffff00" enableWrapAround="1" transparent="1" />

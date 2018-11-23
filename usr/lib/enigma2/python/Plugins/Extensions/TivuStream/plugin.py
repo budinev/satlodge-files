@@ -74,9 +74,9 @@ def _(txt):
 localeInit()
 language.addCallback(localeInit)
 
-currversion = '1.5'
-Version = ' 1.5 - 11.11.2018'
-Credit = ' Buio2005-Furlan-Daimon'
+currversion = '1.6'
+Version = ' 1.6 - 21.11.2018'
+Credit = ' Buio2005,Furlan,Daimon'
 Maintainer2 = ' @Lululla'
 
 def checkInternet():
@@ -197,7 +197,9 @@ server_ref()
 plugin_path = '/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/'
 service_types_tv = '1:7:1:0:0:0:0:0:0:0:(type == 1) || (type == 17) || (type == 22) || (type == 25) || (type == 134) || (type == 195)'
 dir_enigma2 = '/etc/enigma2/'
-addFont('/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/fonts/JAi.ttf', 'OpenFont1', 100, 1)
+# addFont('/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/fonts/JAi.ttf', 'OpenFont1', 100, 1)
+
+addFont('/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/fonts/verdana_r.ttf', 'OpenFont1', 100, 1)
 addFont('/usr/lib/enigma2/python/Plugins/Extensions/TivuStream/res/fonts/showg.ttf', 'OpenFont2', 100, 1)
 
 #brand
@@ -235,8 +237,9 @@ def m3ulistEntry(download):
     backcol = 0
     blue = 4282611429
     # res.append(MultiContentEntryText(pos=(0, 0), size=(1000, 40), text=download, color=col, color_sel=green, backcolor=backcol, backcolor_sel=yellow))
-    res.append(MultiContentEntryText(pos=(0, 0), size=(1000, 40), text=download, color=blue, color_sel=yellow))    
-    # res.append(MultiContentEntryText(pos=(0, 0), size=(1000, 40), text=download, color=blue, color_sel=yellow, backcolor_sel=blue))        
+    # res.append(MultiContentEntryText(pos=(0, 0), size=(1000, 40), text=download, color=blue, color_sel=yellow))    
+    # res.append(MultiContentEntryText(pos=(0, 0), size=(1000, 40), text=download, color=blue, color_sel=yellow, backcolor_sel=blue))    
+    res.append(MultiContentEntryText(pos=(0, 0), size=(1000, 50), text=download))    
     return res
 
 def m3ulist(data, list):
@@ -247,18 +250,19 @@ def m3ulist(data, list):
         mlist.append(m3ulistEntry(name))
         icount = icount + 1
     list.setList(mlist)
+
     
 class ListMenu(MenuList):
     def __init__(self, list):
         MenuList.__init__(self, list, True, eListboxPythonMultiContent)
         if DESKHEIGHT > 1000:
-            self.l.setItemHeight(40)
-            textfont = int(32)
-            self.l.setFont(0, gFont('OpenFont1', textfont))
+            self.l.setItemHeight(50)
+            textfont = int(40)
+            self.l.setFont(0, gFont('OpenFont2', textfont))
         else:
             self.l.setItemHeight(30)
             textfont = int(22)
-            self.l.setFont(0, gFont('OpenFont1', textfont))
+            self.l.setFont(0, gFont('OpenFont2', textfont))
    
 def remove_line(filename, what):
     if os.path.isfile(filename):
@@ -312,15 +316,12 @@ def DownloadInfo(url):
         # self['version2'] = Label('%s' % Version) 
         # self['infoc'] = Label(_('Credit'))        
         # self['infoc2'] = Label('%s' % Credit)        
-        
         # # self['status'] = Label()
         # # self['progress'] = Progress()
         # # self['progresstext'] = StaticText()
         # info2 = ''
-
         # # self['text'] = ScrollLabel()
         # # self.downloading = False
-
         # self['actions'] = ActionMap(['OkCancelActions',
          # 'MenuActions',
          # 'SetupActions'
@@ -340,13 +341,11 @@ def DownloadInfo(url):
          # 'blue': self.M3uPlay,
          # 'menu': self.scsetup,
          # 'green': self.scsetup}, -1)
-        
         # # self.checkCfg()
 
 
     # def M3uPlay(self):
         # self.session.open(OpenM3u)
-
                 
     # # def checkCfg(self):
         # # server_ref()
@@ -372,7 +371,6 @@ def DownloadInfo(url):
             # # self['text'].setText(_('Errore nel download degli aggiornamenti') + ' !')
             # # print"ERROR Download History %s" %(url)
             
-            
     # # def ConnNOK(self, error):
         # # self['text'].setText(_('Server Off') + ' !' + '\ncontrolla SERVER in config')  
         
@@ -392,7 +390,6 @@ class OpenScript(Screen):
             skin = SKIN_PATH + '/OpenScriptOpen.xml'
         else:
             skin = SKIN_PATH + '/OpenScript.xml'
-        
         f = open(skin, 'r')
         self.skin = f.read()
         f.close()         
@@ -400,9 +397,7 @@ class OpenScript(Screen):
         self.list = []
         self['list'] = MenuList([])
         self.icount = 0
-        
         server_ref()        #ok
-        
         global pin       
         pin = 2808
 
@@ -430,21 +425,18 @@ class OpenScript(Screen):
             self.list.append("RADIO")
             self['list'] = MenuList(self.list)
             
-            
         self['fittitle'] = Label(_('..:: TivuStream List ::..'))   
-
-        
         self['Maintainer'] = Label(_('Maintainer'))
         self['Maintainer2'] = Label('%s' % Maintainer2)
         self['version'] = Label(_('Versione'))
         self['version2'] = Label('%s' % Version) 
         self['infoc'] = Label(_('Credit'))        
         self['infoc2'] = Label('%s' % Credit) 
-        
         self['fitred'] = Label(_('Esci'))
         self['fitgreen'] = Label(_('Ricarica Bouquet'))
         self['fityellow'] = Label(_('Elimina'))
         self['fitblue'] = Label(_('Player List'))
+        self['fitmenu'] = Label(_('Menu'))        
         self['actions'] = ActionMap(['OkCancelActions',
          'DirectionActions',
          'MenuActions',
@@ -466,7 +458,6 @@ class OpenScript(Screen):
     def scsetup(self):
         self.session.open(OpenConfig)
 
-
     # def readpin(self):
         # try:
             # getPage(TXT_PUKPRG).addCallback(self.gotUpdateInfo).addErrback(self.gotError)
@@ -481,7 +472,6 @@ class OpenScript(Screen):
         
     # def gotError(self, error = ''):
         # pass
-    
          
     # def Ver_URL(self, url):
         # req = urllib2.Request(url)
@@ -594,9 +584,6 @@ class OpenScript(Screen):
                 eDVBDB.getInstance().reloadServicelist()
                 eDVBDB.getInstance().reloadBouquets() 
             return
-
-            
-            
          
 ####  
     def messagerun(self):
@@ -664,14 +651,12 @@ class OpenM3u(Screen):
         self.initialservice = self.session.nav.getCurrentlyPlayingServiceReference()
         srefInit = self.initialservice
         self['fittitle'] = Label(_('..:: TivuStream Player ::..'))        
-      
         self['Maintainer'] = Label(_('Maintainer'))
         self['Maintainer2'] = Label('%s' % Maintainer2)
         self['version'] = Label(_('Versione'))
         self['version2'] = Label('%s' % Version) 
         self['infoc'] = Label(_('Credit'))        
         self['infoc2'] = Label('%s' % Credit) 
-        
         self['info'] = Label()
         pthm3uf = config.plugins.TivuStream.pthm3uf.value + 'movie' 
         self['path'] = Label(_('Percorso cartella %s') % pthm3uf)
@@ -679,7 +664,6 @@ class OpenM3u(Screen):
         self['fitgreen'] = Label(_('Converti StreamLink'))        
         self['fitblue'] = Label(_('Converti ExtePlayer3'))
         self['fityellow'] = Label(_('Converti Gstreamer'))
-       
         self['setupActions'] = ActionMap(['SetupActions', 'ColorActions', 'MenuActions', 'TimerEditActions'], 
         {
          # 'red': self.message1,
@@ -793,7 +777,8 @@ class OpenM3u(Screen):
             name = self.names[idx]
             self.create_bouquetstreamlink()
             return
-  #SERVICE 5002:0:1:1:0:0:0:0:0:0:          
+            
+#SERVICE 5002:0:1:1:0:0:0:0:0:0:          
 # #SERVICE 5002:0:1:0:0:0:0:0:0:0:http%3a//127.0.0.1%3a8088/            
     def create_bouquetstreamlink(self):
             idx = self['list'].getSelectionIndex()
@@ -843,7 +828,6 @@ class OpenM3u(Screen):
             self.mbox = self.session.open(openMessageBox, _('Riordino liste Favorite in Corso') + '\n' + _('Attendere prego ...'), openMessageBox.TYPE_INFO, timeout=5)
             ReloadBouquet()
                             
-            
     def create_bouquet5002(self):
             idx = self['list'].getSelectionIndex()
             self.convert = True
@@ -889,8 +873,6 @@ class OpenM3u(Screen):
                             outfile.close()
             self.mbox = self.session.open(openMessageBox, _('Riordino liste Favorite in Corso') + '\n' + _('Attendere prego ...'), openMessageBox.TYPE_INFO, timeout=5)
             ReloadBouquet()
-
-        
             
     def create_bouquet(self):
             idx = self['list'].getSelectionIndex()
@@ -961,14 +943,12 @@ class M3uPlay(Screen):
         self['list'] = ListMenu([])
         self['fittitle'] = Label(_('..:: TivuStream Player ::..'))    
         self['info'] = Label()  
-        
         self['Maintainer'] = Label(_('Maintainer'))
         self['Maintainer2'] = Label('%s' % Maintainer2)
         self['version'] = Label(_('Versione'))
         self['version2'] = Label('%s' % Version) 
         self['infoc'] = Label(_('Credit'))        
         self['infoc2'] = Label('%s' % Credit) 
-        
         self['fitred'] = Label(_('Esci'))
         self['fitgreen'] = Label(_('Play'))
         self['fityellow'] = Label(_(''))
@@ -986,10 +966,7 @@ class M3uPlay(Screen):
         self['live'].setText('')
         self.name = name
         self.srefOld = self.session.nav.getCurrentlyPlayingServiceReference()
-        
         self.onLayoutFinish.append(self.playList)
-
-        
         
     def playList(self):
         self.names = []
@@ -1011,8 +988,6 @@ class M3uPlay(Screen):
             print ex
             print 'ex playList' 
             
-            
-            
     def runChannel(self):
         idx = self['list'].getSelectionIndex()
         if idx == -1 or None:
@@ -1022,7 +997,6 @@ class M3uPlay(Screen):
             url = self.urls[idx]
             self.session.open(M3uPlay2, name, url)
             return
-
             
     def runPreview(self):
         idx = self['list'].getSelectionIndex()
@@ -1124,9 +1098,7 @@ class M3uPlay2(Screen, InfoBarMenu, InfoBarBase, InfoBarSeek, InfoBarNotificatio
         if ".ts" or ".mp4" or ".avi" in self.url: 
             ref = '4097:0:1:0:0:0:0:0:0:0:' + url
             print "ref= ", ref        
-        
         else:
-        
             if config.plugins.TivuStream.services.value == 'Gstreamer':
                 ref = '4097:0:1:0:0:0:0:0:0:0:' + url
                 print "ref= ", ref
@@ -1177,29 +1149,31 @@ class AddIpvStream(Screen):
 
     def __init__(self, session, name, url):
         self.session = session
-        skin = SKIN_PATH + '/AddIpvStream.xml'
+        if fileExists(BRAND) or fileExists(BRANDP):
+            skin = SKIN_PATH + '/AddIpvStreamOpen.xml'
+        else:
+            skin = SKIN_PATH + '/AddIpvStream.xml'        
+        #skin = SKIN_PATH + '/AddIpvStream.xml'
         f = open(skin, 'r')
         self.skin = f.read()
         f.close()          
         Screen.__init__(self, session)
         self['fittitle'] = Label(_('..:: TivuStream Add Stream ::..'))  
-        
         self['Maintainer'] = Label(_('Maintainer'))
         self['Maintainer2'] = Label('%s' % Maintainer2)
         self['version'] = Label(_('Versione'))
         self['version2'] = Label('%s' % Version) 
         self['infoc'] = Label(_('Credit'))        
         self['infoc2'] = Label('%s' % Credit) 
-        
         self['actions'] = ActionMap(['SetupActions', 'ColorActions'], {'ok': self.keyOk,
          'blue': self.keyOk,
          'cancel': self.keyCancel,
          'green': self.keyOk,
          'red': self.keyCancel}, -2)
-        self['statusbar'] = StaticText(_('Seleziona i flussi da aggiungere al bouquet'))
+        self['statusbar'] = Label()
+        # self['statusbar'].setText(_('Seleziona i flussi da aggiungere al bouquet'))
         self.list = []
         self['menu'] = MenuList([])
-        
         self.mutableList = None
         self.servicelist = ServiceList(None)
         self.onLayoutFinish.append(self.createTopMenu)
@@ -1218,8 +1192,7 @@ class AddIpvStream(Screen):
         tmpList = []
         self.list = self.getBouquetList()
         self['menu'].setList(self.list)
-
-        
+        self['statusbar'].setText(_('Seleziona il Bouquet e premi OK per inserire'))        
         
     def getBouquetList(self):
         self.service_types = service_types_tv
@@ -1241,7 +1214,6 @@ class AddIpvStream(Screen):
                         info = serviceHandler.info(s)
                         if info:
                             bouquets.append((info.getName(s), s))
-
                 return bouquets
         else:
             info = serviceHandler.info(self.bouquet_root)
@@ -1308,14 +1280,12 @@ class OpenConfig(Screen, ConfigListScreen):
         info = '***'
         self['fittitle'] = Label(_('..:: TivuStream Config ::..'))        
         self['infoc'] = Label(Credit)         
-
         self['Maintainer'] = Label(_('Maintainer'))
         self['Maintainer2'] = Label('%s' % Maintainer2)
         self['version'] = Label(_('Versione'))
         self['version2'] = Label('%s' % Version) 
         self['infoc'] = Label(_('Credit'))        
         self['infoc2'] = Label('%s' % Credit) 
-        
         self['fitred'] = Label(_('Esci'))
         self['fityellow'] = Label(_('Aggiorna Plugin'))
         self['fitgreen'] = Label(_('Salva'))
@@ -1341,8 +1311,6 @@ class OpenConfig(Screen, ConfigListScreen):
          
         self.onLayoutFinish.append(self.layoutFinished) 
 
-        
-        
     def layoutFinished(self):
         server_ref()
     
@@ -1395,8 +1363,6 @@ class OpenConfig(Screen, ConfigListScreen):
         self.list.append(getConfigListEntry(_('Link in Menu Principale:'), config.plugins.TivuStream.strtmain, _("Mostra Plugin in Main Menu")))
         self['config'].list = self.list
         self["config"].setList(self.list)
-
-        
 
     def changedEntry(self):
         for x in self.onChangedEntry:
@@ -1452,8 +1418,6 @@ class OpenConfig(Screen, ConfigListScreen):
             self.close()
         else:
            self.close()            
-
-          
         
     def KeyText(self):
         sel = self['config'].getCurrent()
@@ -1504,9 +1468,6 @@ class OpenConfig(Screen, ConfigListScreen):
             os.system('sleep 3')
             # self.session.open(OpenConsole, _('Aggiorno Plugin: %s') % dom, ['opkg install -force-overwrite %s' % com], finishedCallback=self.msgrstrt3, closeOnSuccess=True)
             self.session.open(OpenConsole, _('Aggiorno Plugin: %s') % dom, ['tar -xvf /tmp/tivustream.tar -C /'], finishedCallback=self.msgrstrt3, closeOnSuccess=True)
-
-            
-            
             
     def msgrstrt3(self):
         self.mbox = self.session.open(openMessageBox, _('Plugin Aggiornato!\nRiavvio interfaccia utente'), openMessageBox.TYPE_INFO, timeout=4)
@@ -1526,14 +1487,12 @@ class OpenConsole(Screen):
         self.closeOnSuccess = closeOnSuccess
         self['fittitle'] = Label(_('..:: TivuStream Console ::..'))        
         self['text'] = ScrollLabel('')
-        
         self['Maintainer'] = Label(_('Maintainer'))
         self['Maintainer2'] = Label('%s' % Maintainer2)
         self['version'] = Label(_('Versione'))
         self['version2'] = Label('%s' % Version) 
         self['infoc'] = Label(_('Credit'))        
         self['infoc2'] = Label('%s' % Credit) 
-        
         self['actions'] = ActionMap(['WizardActions', 'DirectionActions'], {'ok': self.cancel,
          'back': self.cancel,
          'up': self['text'].pageUp,
@@ -1607,21 +1566,23 @@ class openMessageBox(Screen):
     def __init__(self, session, text, type = TYPE_YESNO, timeout = -1, close_on_any_key = False, default = True, enable_input = True, msgBoxID = None, picon = None, simple = False, list = [], timeout_default = None):
         self.type = type
         self.session = session
-        skin = SKIN_PATH + '/OpenMessageBox.xml'
+        if fileExists(BRAND) or fileExists(BRANDP):
+            skin = SKIN_PATH + '/OpenMessageBoxOpen.xml'
+        else:
+            skin = SKIN_PATH + '/OpenMessageBox.xml'        
+        #skin = SKIN_PATH + '/OpenMessageBox.xml'
         f = open(skin, 'r')
         self.skin = f.read()
         f.close()          
         Screen.__init__(self, session)
         self.msgBoxID = msgBoxID
         self['fittitle'] = Label(_('..:: TivuStream Message ::..'))  
-        
         self['Maintainer'] = Label(_('Maintainer'))
         self['Maintainer2'] = Label('%s' % Maintainer2)
         self['version'] = Label(_('Versione'))
         self['version2'] = Label('%s' % Version) 
         self['infoc'] = Label(_('Credit'))        
         self['infoc2'] = Label('%s' % Credit) 
-        
         self['text'] = Label(text)
         self['Text'] = StaticText(text)
         self['selectedChoice'] = StaticText()
@@ -1772,7 +1733,6 @@ class openMessageBox(Screen):
 class plgnstrt(Screen):
     
     def __init__(self, session):
-    
         self.session = session
         skin = SKIN_PATH + '/Plgnstrt.xml'
         f = open(skin, 'r')
@@ -1780,7 +1740,6 @@ class plgnstrt(Screen):
         f.close()          
         Screen.__init__(self, session)    
         self['text'] = ScrollLabel()
-        
         self['actions'] = ActionMap(['OkCancelActions',
          'DirectionActions','ColorActions', 'SetupActions'], {'ok': self.clsgo,
          'cancel': self.clsgo,
@@ -1828,7 +1787,6 @@ class plgnstrt(Screen):
             
     def ConnNOK(self, error):
         self['text'].setText(_('\n\n\nServer Off') + ' !' + '\ncontrolla SERVER in config')          
-        
         
         
     def clsgo(self):

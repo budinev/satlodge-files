@@ -165,7 +165,7 @@ def showlist(data, list):
         list.setList(plist)
     
 
-Version = '1.3'
+Version = '1.4'
 ECM_INFO = '/tmp/ecm.info'
 EMPTY_ECM_INFO = ('', '0', '0', '0')
 
@@ -256,10 +256,11 @@ class slManager(Screen):
 
         def slpanel(self):
             if fileExists('/usr/lib/enigma2/python/Plugins/SatLodge/slPanel/plugin.pyo'):
-                from Plugins.SatLodge.slPanel.plugin import *
+                # from Plugins.SatLodge.slPanel.plugin import *
+                from Plugins.SatLodge.slPanel.plugin import logoStrt                
                 #self.close( )
                 #self.close(logoStrt)
-                self.session.openWithCallback(self.close, Homesl)
+                self.session.openWithCallback(self.close, logoStrt)
 #                self.session.open(self.close, logoStrt) 
             else: 
                 self.session.open(MessageBox,("slPanel Not Installed!!"), type=MessageBox.TYPE_INFO, timeout=3)

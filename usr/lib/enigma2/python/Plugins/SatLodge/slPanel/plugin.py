@@ -89,7 +89,7 @@ except:
 
 DESKHEIGHT = getDesktop(0).size().height()
 
-currversion = '1.7'
+currversion = '1.8'
 plugin_path = '/usr/lib/enigma2/python/Plugins/SatLodge/slPanel'
 ico_path = '/usr/lib/enigma2/python/Plugins/SatLodge/slPanel/res/pics/addons3.png'
 ##########################################
@@ -202,6 +202,7 @@ class logoStrt(Screen):
         self.session.openWithCallback(self.close, Homesl)
 
 Panel_list = [
+ _('IMAGE'),
  _('SETTINGS DAILY'),
  _('DEPENDENCIES'),
  _('DRIVERS'), 
@@ -268,8 +269,8 @@ def SLListEntry(name, idx):
         png = ico1_path 
     if idx == 16:
         png = ico1_path
-    # elif idx == 17:
-        # png = ico1_path 
+    elif idx == 17:
+        png = ico1_path 
         
     if fileExists(png):
         res.append(MultiContentEntryPixmapAlphaTest(pos=(0, 0), size=(25, 25), png=loadPNG(png)))
@@ -277,12 +278,6 @@ def SLListEntry(name, idx):
     return res
 
 ######################## daily list
-# Panel_list2 = [
- # _('SETTINGS CORVONE'), 
- # _('SETTINGS MANUTEK'),
- # _('SETTINGS MILENKO61'), 
- # _('SETTINGS MORPHEUS'),
- # _('SETTINGS VHANNIBAL')]  
  
 Panel_list2 = [
 # _('SETTINGS CORVONE'), 
@@ -417,6 +412,12 @@ class Homesl(Screen):
          'cancel': self.closerm}, -1)
         self.onLayoutFinish.append(self.updateMenuList)
 
+        
+    def slImageDownloader(self):
+        from .main import STBmodel
+        session.open(STBmodel)
+    
+        
     def slManager(self):
         if fileExists('/usr/lib/enigma2/python/Plugins/SatLodge/slManager/plugin.pyo'):
             from Plugins.SatLodge.slManager.plugin import slManager
@@ -493,6 +494,9 @@ class Homesl(Screen):
             self.session.open(PluginUtility)        
         elif sel == _('PLUGIN WEATHER'):
             self.session.open(PluginWeather)
+        elif sel == _('IMAGE'):
+            from .main import STBmodel
+            self.session.open(STBmodel)           
 
 
 class Drivers(Screen):

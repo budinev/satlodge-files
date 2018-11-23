@@ -322,7 +322,7 @@
   <widget name="QuestionPixmap" pixmap="skin_default/icons/input_question.png" position="1749,212" size="80,80" alphatest="blend" />
   <widget name="InfoPixmap" pixmap="skin_default/icons/input_info.png" position="1749,212" size="80,80" alphatest="blend" />
   <widget name="WarningPixmap" pixmap="skin_default/icons/input_warning.png" position="1748,210" size="80,80" alphatest="blend" />   
-  <widget name="Text" position="921,195" size="791,514" font="font1;34" foregroundColor="#ffffff" zPosition="2" />
+  <widget name="Text" position="921,195" size="791,514" font="Regular;34" foregroundColor="#ffffff" zPosition="2" />
   <widget name="selectedChoice" position="6,722" size="860,85" foregroundColor="unffff00" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;36" valign="center" halign="left" />
   <widget name="list" position="932,371" selectionPixmap="CinoPLi-FHD/buttons/sel.png" size="839,380" itemHeight="38" font="Regular;28" />
 </screen>
