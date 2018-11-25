@@ -2,8 +2,149 @@
 <skin>
 
 
+  <!-- slpanel image thanks mfaraj57-gogj from plugin Universal ImageDownloader -->                
+<screen name="STBmodel" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+  
+    <ePixmap pixmap="CinoPLi-FHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />  
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+    
+  <widget name="list" zPosition="2" position="780,105" size="1137,902" itemHeight="45" font="Regular; 32" selectionPixmap="CinoPLi-FHD/buttons/sel2.png" />   
+  
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
+
+<screen name="FEEDmodel" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />  
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+
+  <widget name="list" zPosition="2" position="780,105" size="1137,902" itemHeight="45" font="Regular; 32" selectionPixmap="CinoPLi-FHD/buttons/sel2.png" />   
+  
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
+
+<screen name="SERVERmodel" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />  
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+
+  <widget name="list" zPosition="2" position="780,105" size="1137,902" itemHeight="45" font="Regular; 32" selectionPixmap="CinoPLi-FHD/buttons/sel2.png" />   
+  
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
+
+<screen name="DownloaderImage" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />  
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+  <widget name="menu" zPosition="2" position="780,105" size="1137,902" itemHeight="45" font="Regular; 32" selectionPixmap="CinoPLi-FHD/buttons/sel2.png" />   
+  <widget name="info" position="860,576" zPosition="4" size="1001,436" font="Regular;30" foregroundColor="unffff00" transparent="1" halign="center" valign="center" /> 
+  
+  
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
+
+<screen name="ImageDownLoader" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />  
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+
+    <widget source="menu" render="Listbox" position="782,107" size="1137,289" zPosition="3" transparent="1" foregroundColor="#ffff00" foregroundColorSelected="#ffffff" backgroundColorSelected="#000000" scrollbarMode="showNever">
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (10, 2), size = (870, 60), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+	],
+	"fonts": [gFont("Regular", 40)],
+	"itemHeight": 50
+	}
+	</convert>
+	</widget>
+	<widget source="menu" render="Listbox" position="780,400" size="1138,276" zPosition="4" scrollbarMode="showNever" selectionDisabled="1" transparent="1">
+	<convert type="TemplatedMultiContent">
+	{"template": [
+	MultiContentEntryText(pos = (0, 3), size = (880, 150), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 0 is the MenuText,
+	],
+	"fonts": [gFont("Regular", 34)],
+	"itemHeight": 150
+	}
+	</convert>
+	</widget>
+
+    
+    <widget name="downloadtext" position="780,679" zPosition="4" size="1137,125" font="Regular;30" foregroundColor="unffff00" transparent="1" halign="center" valign="center" /> 
+    <widget name="targettext" position="777,806" zPosition="4" size="1140,105" font="Regular;30" foregroundColor="unffff00" transparent="1" halign="center" valign="center" /> 
+    <widget name="target" position="779,908" zPosition="4" size="1137,113" font="Regular;30" foregroundColor="unffff00" transparent="1" halign="center" valign="center" /> 
+  
+  
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
 
 
+<screen name="ImageDownLoaderFiles" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />  
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+
+  <widget name="menu" zPosition="2" position="780,105" size="1137,902" itemHeight="45" font="Regular; 32" selectionPixmap="CinoPLi-FHD/buttons/sel2.png" />   
+  <widget name="info" position="860,576" zPosition="4" size="1001,436" font="Regular;30" foregroundColor="unffff00" transparent="1" halign="center" valign="center" /> 
+  
+  
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
+
+<screen name="ImageDownloadLocation" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+  <panel name="PigTemplate" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/red.png" position="192,1032" size="34,34" alphatest="blend" />
+    <ePixmap pixmap="CinoPLi-FHD/buttons/green.png" position="628,1032" size="34,34" alphatest="blend" />  
+    <widget name="key_red" position="242,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="red" />
+    <widget name="key_green" position="678,1030" size="370,38" zPosition="1" transparent="1" font="Regular;34" halign="left" foregroundColor="green" />
+
+  <widget name="filelist" zPosition="2" position="780,105" size="1137,902" itemHeight="45" font="Regular; 32" selectionPixmap="CinoPLi-FHD/buttons/sel2.png" />   
+	<widget source="text" render="Label" position="42,630" size="800,100" valign="center" halign="center" font="Regular;36" transparent="1" zPosition="3" foregroundColor="#ffff00" />
+	<widget name="target" position="43,728" size="800,100" valign="center" halign="center" font="Regular;36" transparent="1" zPosition="4" />
+  
+  
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
+
+<screen name="downloadTask" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
+
+  <widget source="tasklist" render="Listbox" position="840,165" size="952,555" zPosition="2" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+		{"template": [
+				MultiContentEntryText(pos = (15,1), size = (375,36), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the name
+				MultiContentEntryText(pos = (405,1), size = (165,36), font=1, flags = RT_HALIGN_RIGHT, text = 2), # index 2 is the state
+				MultiContentEntryProgress(pos = (585,1), size = (150,36), percent = -3), # index 3 should be progress
+				MultiContentEntryText(pos = (750,1), size = (150,36), font=1, flags = RT_HALIGN_RIGHT, text = 4), # index 4 is the percentage
+			],
+			"fonts": [gFont("Regular",33),gFont("Regular",27)],
+			"itemHeight": 37
+		}
+	</convert>
+    </widget>
+  <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
+</screen>
+
+
+
+    
+    
+
+
+<!--- ssssssssssssssssssssssssssssss -->
   <!-- slmanager -->  
 <screen name="slManager" position="fill" title="Sat-Lodge Panel" flags="wfNoBorder">
   <panel name="PigTemplate" />
@@ -33,6 +174,8 @@
   <ePixmap pixmap="CinoPLi-FHD/border/smallshadowline.png" position="0,1020" size="1920,3" />  
   
 </screen>
+
+
 
 
 
