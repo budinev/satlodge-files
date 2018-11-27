@@ -1865,6 +1865,44 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <screen name="About" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget name="AboutScrollLabel" font="Regular;28" position="780,100" size="1110,912" zPosition="2" split="1" dividechar=":" colposition="0" />
+
+  <ePixmap position="59,566" zPosition="1" size="50,50" pixmap="CinoPLi-FHD/icons/ram.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoPLi-FHD/infobar/bar_finder.png" position="120,568" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,590" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">MemTotal,Full</convert>
+  </widget>
+  <ePixmap position="60,620" zPosition="1" size="50,50" pixmap="CinoPLi-FHD/icons/swap.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoPLi-FHD/infobar/bar_finder.png" position="120,621" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">SwapTotal</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,643" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">SwapTotal,Full</convert>
+  </widget>
+  <ePixmap position="60,674" zPosition="1" size="50,50" pixmap="CinoPLi-FHD/icons/flash.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoPLi-FHD/infobar/bar_finder.png" position="120,676" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,696" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">Flesh,Full</convert>
+  </widget>
+  <ePixmap position="60,780" zPosition="1" size="50,50" pixmap="CinoPLi-FHD/icons/usb.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoPLi-FHD/infobar/bar_finder.png" position="120,780" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,802" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">UsbInfo,Full</convert>
+  </widget>
+  <ePixmap position="60,726" zPosition="1" size="50,50" pixmap="CinoPLi-FHD/icons/hdd.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" pixmap="CinoPLi-FHD/infobar/bar_finder.png" position="120,728" size="280,20" transparent="1" borderWidth="2" borderColor="grey" zPosition="2">
+    <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="120,748" size="550,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">HddInfo,Full</convert>
+  </widget>    
+
+
   </screen>
   <!-- Memory Info -->
   <screen name="MemoryInfo" position="fill" flags="wfNoBorder">
